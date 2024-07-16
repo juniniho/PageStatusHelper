@@ -1,8 +1,8 @@
 package com.smartcity.commonbase.widget.pagestatus;
 
 import android.content.Context;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CoordinatorLayout;
+import com.google.android.material.appbar.AppBarLayout;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewParent;
