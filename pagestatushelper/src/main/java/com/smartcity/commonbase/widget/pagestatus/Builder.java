@@ -25,7 +25,7 @@ public class Builder {
 
     @ColorInt
     private Integer textColor = null;
-    @DimenRes
+
     private int textSize = 16;
     private CharSequence errorText = "加载失败~点击重试", errorText2 = "加载失败~", loadingText = "努力加载中~", emptyText = "空空如也~", networkText = "网络断线啦~点击重试", networkText2 = "网络断线啦~", noLoginText = "没有登录~";
 
@@ -70,6 +70,10 @@ public class Builder {
         this.errorText = errorText;
         return this;
     }
+    public Builder setErrorText2(CharSequence errorText) {
+        this.errorText2 = errorText;
+        return this;
+    }
 
     public Builder setTextColor(@ColorInt int textColor) {
         this.textColor = textColor;
@@ -105,6 +109,11 @@ public class Builder {
 
     public Builder setNetworkText(CharSequence networkText) {
         this.networkText = networkText;
+        return this;
+    }
+
+    public Builder setNetworkText2(CharSequence networkText) {
+        this.networkText2 = networkText;
         return this;
     }
 
